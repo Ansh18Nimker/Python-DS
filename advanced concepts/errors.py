@@ -1,21 +1,24 @@
-while True:
-    try:
-        a = int(input("enter number 1 = "))
-        b = int(input("enter number 2 = "))
+# while True:
+#     try:
+#         a = int(input("enter number 1 = "))
+#         b = int(input("enter number 2 = "))
         
-        print(f"the sum is {a+b}")
+#         print(f"the division is {a / b}")
+
+#     except ValueError:
+#         print("please dont perform bad typecasts")
     
-    except Exception as e:
-        print("some error occured" ,e)
+#     except ZeroDivisionError:
+#         print("hey dont divide by zero")
 
-# num = int(input("Enter a number: "))
-# while num >= 10:  
-#     s = 0
-#     for digit in str(num):  
-#         s += int(digit)
-#     num = s
+#     except Exception as e:
+#         print("some error occured!", e)
 
-# print("Single digit result:", num) 
+a = int(input("enter the number 1 :"))
+b = int(input("enter the number 2"))
+
+if b ==0:
+  raise ValueError("please dont divide by 0")
 
 
-
+print(f"the division is {a/b}")
